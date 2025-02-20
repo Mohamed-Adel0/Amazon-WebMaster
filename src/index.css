@@ -27,5 +27,41 @@
 }
 /* home page */
 .home-deals-container {
-  @apply w-[90%] mx-auto;
+  @apply mx-auto;
+}
+
+
+
+
+/* swiper slider Home page */
+
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+  color: black;
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+  color: black;
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 5px 0 0 5px ;
+}
+
+.swiper-scrollbar {
+  background: white; 
+  border-radius: 10px;
+  height: 6px; 
+  bottom: -5px; 
+  margin:20px;
+}
+
+.swiper-scrollbar-drag {
+  background: #8D8D8D; 
+  border-radius: 10px;
+  height: 5px;
 }
