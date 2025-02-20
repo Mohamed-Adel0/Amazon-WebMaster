@@ -1,5 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* global styles */
+  a,
+  input,
+  button,
+  img,
+  textarea,
+  svg {
+    transition: all 0.4s;
+  }
+}
+/* global style classes */
+.product-deal-card {
+  @apply space-y-[40px] py-[18px] px-[11px] bg-white;
+  a {
+    @apply text-Cyan block w-fit hover:text-Gray;
+  }
+  .cat-four-imgs {
+    @apply grid grid-cols-2 gap-x-[13px] gap-y-[5px];
+  }
+}
+/* home page */
+.home-deals-container {
+  @apply w-[90%] mx-auto;
 }
