@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white p-2">
+        <div class="container mx-auto flex items-center justify-between">
+            
+            <!-- Amazon Logo & Location -->
+            <div class="flex items-center space-x-4">
+                <img src="https://i.imgur.com/LpAzuKA.png" alt="Amazon Logo" class="h-8">
+                <div class="text-xs">
+                    <p class="text-gray-300">Delivering to Surat 394210</p>
+                    <p class="font-bold">Update location</p>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="flex-grow mx-6 max-w-md">
+                <div class="flex items-center bg-white rounded-md overflow-hidden">
+                    <select class="bg-gray-200 text-black px-2 py-2 text-xs rounded-l-md">
+                        <option>All</option>
+                        <option>Electronics</option>
+                        <option>Fashion</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon.in" class="w-full px-2 py-2 text-black text-sm outline-none">
+                    <button class="bg-yellow-500 px-3 py-2 flex items-center justify-center">
+                        🔍
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side Links -->
+            <div class="flex items-center space-x-6">
+                
+                <!-- Country Selector Dropdown -->
+                <div class="relative group cursor-pointer">
+                    <div class="flex items-center space-x-1">
+                        <img src="https://flagcdn.com/w40/in.png" alt="India" class="h-4 w-6">
+                        <span class="text-sm font-bold">EN</span>
+                    </div>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute hidden group-hover:block bg-white text-black rounded-md shadow-lg mt-2 w-32 p-2">
+                        <a href="#" class="flex items-center space-x-2 hover:bg-gray-200 p-2 rounded">
+                            <img src="https://flagcdn.com/w40/us.png" alt="USA" class="h-4 w-6"> <span>USA</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-2 hover:bg-gray-200 p-2 rounded">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="UK" class="h-4 w-6"> <span>UK</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-2 hover:bg-gray-200 p-2 rounded">
+                            <img src="https://flagcdn.com/w40/ae.png" alt="UAE" class="h-4 w-6"> <span>UAE</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-2 hover:bg-gray-200 p-2 rounded">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="France" class="h-4 w-6"> <span>France</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Account & Lists -->
+                <a href="#" class="text-xs hover:underline">
+                    <p class="text-gray-300">Hello, Sign in</p>
+                    <p class="font-bold">Account & Lists</p>
+                </a>
+
+                <!-- Orders -->
+                <a href="#" class="text-xs hover:underline">
+                    <p class="text-gray-300">Returns</p>
+                    <p class="font-bold">& Orders</p>
+                </a>
+
+                <!-- Cart -->
+                <a href="#" class="flex items-center space-x-1">
+                    🛒 <span class="font-bold">Cart</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Categories Bar -->
+<div class="bg-gray-800 text-white text-sm py-2">
+    <div class="container mx-auto flex items-center px-6">
+        
+        <!-- زر All مع الأيقونة ☰ -->
+        <button class="flex items-center space-x-2 font-bold text-white px-3 py-2 hover:bg-gray-700 rounded">
+            ☰ <span>All</span>
+        </button>
+
+        <!-- قائمة التصنيفات -->
+        <div class="flex items-center space-x-9 ml-6">
+            <a href="#" class="hover:underline">Amazon miniTV</a>
+            <a href="#" class="hover:underline">Sell</a>
+            <a href="#" class="hover:underline">Best Sellers</a>
+            <a href="#" class="hover:underline">Today's Deals</a>
+            <a href="#" class="hover:underline">Mobiles</a>
+            <a href="#" class="hover:underline">Customer Service</a>
+            <a href="#" class="hover:underline">Prime</a>
+            <a href="#" class="hover:underline">Electronics</a>
+            <a href="#" class="hover:underline">Fashion</a>
+            <a href="#" class="hover:underline">New Releases</a>
+            <a href="#" class="hover:underline">Home & Kitchen</a>
+            <a href="#" class="hover:underline">Amazon Pay</a>
+        </div>
+
+    </div>
+</div>
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white text-sm mt-8">
+    
+    <!-- Back to Top Button -->
+    <div class="bg-gray-800 text-center py-3 hover:bg-gray-700 cursor-pointer">
+        Back to Top
+    </div>
+
+    <!-- Footer Links Sections -->
+    <div class="container mx-auto grid grid-cols-4 gap-6 py-10 px-8 text-gray-300">
+        
+        <!-- Section 1 -->
+        <div>
+            <h3 class="font-bold text-white mb-3">Get to Know Us</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+                <li><a href="#" class="hover:underline">Press Releases</a></li>
+                <li><a href="#" class="hover:underline">Amazon Science</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div>
+            <h3 class="font-bold text-white mb-3">Connect with Us</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Facebook</a></li>
+                <li><a href="#" class="hover:underline">Twitter</a></li>
+                <li><a href="#" class="hover:underline">Instagram</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div>
+            <h3 class="font-bold text-white mb-3">Make Money with Us</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Sell on Amazon</a></li>
+                <li><a href="#" class="hover:underline">Sell under Amazon Accelerator</a></li>
+                <li><a href="#" class="hover:underline">Protect and Build Your Brand</a></li>
+                <li><a href="#" class="hover:underline">Amazon Global Selling</a></li>
+                <li><a href="#" class="hover:underline">Become an Affiliate</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div>
+            <h3 class="font-bold text-white mb-3">Let Us Help You</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Your Account</a></li>
+                <li><a href="#" class="hover:underline">Returns Centre</a></li>
+                <li><a href="#" class="hover:underline">100% Purchase Protection</a></li>
+                <li><a href="#" class="hover:underline">Amazon App Download</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom (Logo + Language & Country Selector) -->
+    <div class="border-t border-gray-700 py-6 flex justify-center items-center space-x-6">
+        <img src="https://i.imgur.com/LpAzuKA.png" alt="Amazon Logo" class="w-24">
+
+        <!-- Language Selector -->
+        <select class="bg-gray-800 text-white border border-gray-600 px-3 py-1 rounded cursor-pointer">
+            <option>🌐 English</option>
+            <option>🌐 العربية</option>
+            <option>🌐 Español</option>
+            <option>🌐 Français</option>
+            <option>🌐 Deutsch</option>
+        </select>
+
+        <!-- Country Selector -->
+        <select class="bg-gray-800 text-white border border-gray-600 px-3 py-1 rounded cursor-pointer">
+            <option>🇺🇸 United States</option>
+            <option>🇮🇳 India</option>
+            <option>🇬🇧 United Kingdom</option>
+            <option>🇩🇪 Germany</option>
+            <option>🇯🇵 Japan</option>
+        </select>
+    </div>
+
+    <!-- Footer Bottom Section (Extra Links) -->
+<div class="bg-gray-950 text-gray-400 text-sm py-8">
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 text-center md:text-left px-10">
+
+        <div>
+            <h3 class="font-bold text-white">AbeBooks</h3>
+            <p class="text-gray-400 text-xs leading-5">Books, art & collectibles</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">Amazon Web Services</h3>
+            <p class="text-gray-400 text-xs leading-5">Scalable Cloud <br>Computing Services</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">Audible</h3>
+            <p class="text-gray-400 text-xs leading-5">Download <br>Audio Books</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">IMDb</h3>
+            <p class="text-gray-400 text-xs leading-5">Movies, TV <br>& Celebrities</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">Shopbop</h3>
+            <p class="text-gray-400 text-xs leading-5">Designer <br>Fashion Brands</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">Amazon Business</h3>
+            <p class="text-gray-400 text-xs leading-5">Everything For <br>Your Business</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">Prime Now</h3>
+            <p class="text-gray-400 text-xs leading-5">2-Hour Delivery <br>on Everyday Items</p>
+        </div>
+
+        <div>
+            <h3 class="font-bold text-white">Amazon Prime Music</h3>
+            <p class="text-gray-400 text-xs leading-5">100 million songs, ad-free <br>Over 15 million podcast episodes</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Legal Section -->
+    <div class="text-center text-gray-500 text-xs mt-6 space-x-6">
+        <a href="#" class="hover:underline">Conditions of Use & Sale</a>
+        <a href="#" class="hover:underline">Privacy Notice</a>
+        <a href="#" class="hover:underline">Interest-Based Ads</a>
+    </div>
+    
+    <p class="text-center text-gray-500 text-xs mt-2">1996-2024, Amazon.com, Inc. or its affiliates</p>
+</div>
+
+
+
+</body>
+</html>
