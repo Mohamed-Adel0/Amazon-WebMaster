@@ -17,51 +17,55 @@
 }
 /* global style classes */
 .product-deal-card {
-  @apply space-y-[40px] py-[18px] px-[11px] bg-white;
+  @apply flex flex-col gap-y-[40px] justify-between py-[18px] px-[11px] bg-white;
   a {
     @apply text-Cyan block w-fit hover:text-Gray;
   }
   .cat-four-imgs {
     @apply grid grid-cols-2 gap-x-[13px] gap-y-[5px];
   }
+  .special-card {
+    @apply flex cursor-pointer justify-between [&>div]:rounded-md [&>div]:border-2 [&>div]:border-transparent [&>div:hover]:border-Cyan [&>div]:overflow-hidden [&>div]:p-4;
+  }
+}
+.grid-four {
+  @apply grid gap-[33px] xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 justify-center;
 }
 /* home page */
 .home-deals-container {
-  @apply mx-auto;
+  @apply w-[95%] mx-auto;
 }
-
-
-
 
 /* swiper slider Home page */
 
-
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: 'prev';
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
   color: black;
   background-color: white;
   padding: 20px 15px;
   border-radius: 0 5px 5px 0;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: 'next';
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
   color: black;
   background-color: white;
   padding: 20px 15px;
-  border-radius: 5px 0 0 5px ;
+  border-radius: 5px 0 0 5px;
 }
 
 .swiper-scrollbar {
-  background: white; 
+  background: white;
   border-radius: 10px;
-  height: 6px; 
-  bottom: -5px; 
-  margin:20px;
+  height: 6px;
+  bottom: -5px;
+  margin: 20px;
 }
 
 .swiper-scrollbar-drag {
-  background: #8D8D8D; 
+  background: #8d8d8d;
   border-radius: 10px;
   height: 5px;
 }

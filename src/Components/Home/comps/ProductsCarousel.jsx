@@ -72,7 +72,7 @@ export default function ProductsCarousel({title , link}) {
   
 
   return (
-    <div className="relative w-full bg-white px-4 md:px-8  ">
+    <div className="relative w-full bg-white px-4 md:px-8 ">
       <a href={link} className="font-bold text-[18px] sm:text-[22px] py-4 text-center sm:text-left">
         {title}
       </a>

@@ -1,26 +1,28 @@
 import React from "react";
 
-export default function ProductDealsCard() {
+export default function ProductDealsCard({ card }) {
+  const { title, card_body, link } = card;
+
   return (
     <div className="product-deal-card">
       <div>
-        <h1 className="text-[22px] font-bold">Revamp your home in style</h1>
+        <h1 className="text-[22px] font-bold">{title}</h1>
         <div className="cat-four-imgs">
-          {Array.from({ length: 4 }).map((_, i) => (
+          {card_body.map(({ text, img }, i) => (
             <div key={i}>
               <img
-                alt=""
-                src="card-img.png"
+                alt={img}
+                src={img}
                 className="w-full"
                 width={135}
                 height={116}
               />
-              <h6 className="text-[12px]">Cushion covers, bedsheets & more</h6>
+              {text && <h6 className="text-[12px]">{text}</h6>}
             </div>
           ))}
         </div>
       </div>
-      <a href="">See more</a>
+      {link && <a href="">{link}</a>}
     </div>
   );
 }

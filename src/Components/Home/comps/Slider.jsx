@@ -14,21 +14,31 @@ export default function Slider() {
     navigation: { nextEl: "#next-slide", prevEl: "#prev-slide" },
   };
 
+  const slider_imgs = [
+    "home/slider/slider.png",
+    "home/slider/slider-1.png",
+    "home/slider/slider-2.png",
+  ];
+
   return (
-    <Swiper {...swiperProps} className="bg-green-400 relative">
-      {Array.from({ length: 4 }).map((_, i) => (
+    <Swiper {...swiperProps} className="h-[60vh] relative">
+      {slider_imgs.map((src, i) => (
         <SwiperSlide key={i}>
           <img
-            src="slider-placeholder.png"
-            className="w-full bg-center object-cover"
-            alt=""
+            src={src}
+            className="w-full h-full bg-center object-cover"
+            alt={"slider" + i}
           />
         </SwiperSlide>
       ))}
       {/* navigation controls btns */}
-      <div className="w-full px-20 flex z-50 top-1/2 -translate-y-1/2 justify-between absolute">
-        <button id="prev-slide"><img src="left-arrow.svg" alt="" /></button>
-        <button id="next-slide"><img src="right-arrow.svg" alt="" /></button>
+      <div className="sm:flex hidden w-full px-20 z-50 top-1/2 -translate-y-1/2 justify-between absolute">
+        <button id="prev-slide">
+          <img src="left-arrow.svg" alt="" />
+        </button>
+        <button id="next-slide">
+          <img src="right-arrow.svg" alt="" />
+        </button>
       </div>
     </Swiper>
   );
